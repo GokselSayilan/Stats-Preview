@@ -1,0 +1,195 @@
+.statsPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.statsPreviewWrapper {
+    display: flex;
+    background-color: #1B1937;
+    width: 1110px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.statsPreviewWrapperLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.statsPreviewWrapperLeftContent {
+    width: 80%;
+
+}
+
+.statsPreviewWrapperLeftTitle {
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.titleInsights {
+    color: #AB5CDB;
+}
+
+.statsPreviewWrapperLeftDesc {
+    color: rgb(195, 195, 195);
+    font-weight: 200;
+}
+
+.statsPreviewWrapperLeftBottom {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 60px;
+}
+
+.statsPreviewWrapperLeftBottomCard {
+
+    margin-right: 60px;
+}
+
+.statsPreviewWrapperLeftBottomCardTitle {
+    color: white;
+    font-size: 22px;
+
+}
+
+.statsPreviewWrapperLeftBottomCardDesc {
+    font-weight: 200;
+    color: rgb(172, 172, 172);
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+
+.statPreviewWrapperRight {
+    flex: 1;
+    position: relative;
+}
+
+.bannerBg {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 98%, 49%, 0.5);
+    position: absolute;
+    top: 0;
+    border-radius: 0 10px 10px 0;
+    z-index: 10;
+
+
+}
+
+.statPreviewWrapperRightImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+    background-color: #AB5CDB;
+
+}
+
+.statPreviewWrapperRightImgMobile {
+    display: none;
+}
+
+@media (max-width:500px) {
+
+    .statPreviewWrapperRightImg {
+        display: none;
+    }
+
+    
+    .statsPreviewWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #1B1937;
+        width: 330px;
+        height: 650px;
+        border-radius: 10px;
+    }
+    
+    .statsPreviewWrapperLeft {
+        flex: 4;
+        justify-content: space-between;
+    }
+    
+    .statsPreviewWrapperLeftContent {
+        width: 90%;
+        text-align: center;
+    
+    }
+    
+    .statsPreviewWrapperLeftTitle {
+        color: white;
+        margin-bottom: 20px;
+        font-size: 26px;
+        margin-top: 30px;
+    }
+
+    .statsPreviewWrapperLeftDesc {
+        font-size: 16px;
+    }
+    
+
+    
+    .statsPreviewWrapperLeftBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+        gap: 20px;
+    }
+    
+    .statsPreviewWrapperLeftBottomCard {
+    
+        margin-right: 0;
+    }
+    
+    .statsPreviewWrapperLeftBottomCardTitle {
+        color: white;
+        font-size: 22px;
+    
+    }
+    
+    .statsPreviewWrapperLeftBottomCardDesc {
+        font-weight: 200;
+        color: rgb(172, 172, 172);
+        font-size: 14px;
+        margin-top: 0px;
+    
+    }
+    
+    .statPreviewWrapperRight {
+        flex: 1;
+        position: relative;
+    }
+    
+    .bannerBg {
+        width: 330px;
+        height: 200px;
+        background-color: hsla(277, 98%, 49%, 0.5);
+        position: absolute;
+        top: 0;
+        border-radius: 10px 10px 0 0;
+        z-index: 10;
+
+    }
+    
+    .statPreviewWrapperRightImgMobile {
+        display: block;
+        width: 330px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        background-color: #AB5CDB;
+    
+    }
+}
